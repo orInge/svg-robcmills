@@ -14,7 +14,7 @@
 <!-- result = Snap.path.intersection('M 40 30 l 5 0 l 10 -10','M 40 30 c 0 6.66, 10 6.66, 10 0 c 0-6.66, -10-6.66, -10 0') -->
 
 <body>
-  <svg viewBox="26 23 40 24" version="1.1" id='svg-signature'>
+  <svg viewBox="0 0 100 50" version="1.1" id='svg-signature'>
      <!-- <path d='M startX startY a xrad yrad xrot largeflag sweepflag endx endy'/> -->
     <circle cx="25" cy="30" r="5" 
       fill="none" stroke='lightblue' stroke-width='1px'/>
@@ -22,7 +22,7 @@
       fill="none" stroke='lightblue' stroke-width='1px'/>     
     <g id='robcmills'
       stroke='black' stroke-width='1' fill='none'
-      stroke-dasharray='100px, 100px' stroke-dashoffset='0px'>
+      stroke-dasharray='100px, 100px' stroke-dashoffset='100px'>
       <path id='ro' d='M 10,35 L 10,30 
         c 0-6.66, 10-6.66, 10 0 
         c 0 6.66, 10 6.66, 10 0
@@ -32,12 +32,14 @@
         c 0-6.66, -10-6.66, -10 0'/>
 <!--       <path id='cmi' d='M 48.5 26 
         C 47 27, 40 30, 40 30'/> -->
-      <path id='construct' d='M 40 30 l 5 0 l 10 -10'/>
+      <!-- <path id='construct' d='M 40 30 l 5 0 l 10 -10'/> -->
       <path id='construct2' stroke='lightgreen' d='M 40 30 
         c 0 6.66, 10 6.66, 10 0
         c 0-6.66, -10-6.66, -10 0'/>
-      <path id='cBezier' stroke='red' d='M 48.616 26.444 
-        c -0.936 -0.936, -2.15 -1.464, -3.536 -1.434'/>       
+      <path id='cmi' stroke='black' d='M 48.616 26.444 
+        c -0.936 -0.936, -2.15 -1.464, -3.536 -1.434
+        C 43.2 25, 40 26.1, 40 30
+        c 0 6.66, 10 6.66, 10 0'/>
     </g>
   </svg>
 
