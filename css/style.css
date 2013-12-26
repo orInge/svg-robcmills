@@ -1,0 +1,12 @@
+
+html, body {
+  background-color: lightgray;
+  height: 100%;
+}
+
+#svg-signature {
+  background-color: white;
+  height: 400px;
+  width: 800px;
+}
+

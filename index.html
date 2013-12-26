@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>robcmills</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="user-scalable=no, width=device-width, 
+    initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<!-- result = Snap.path.intersection('M 40 30 l 5 0 l 10 -10','M 40 30 c 0 6.66, 10 6.66, 10 0 c 0-6.66, -10-6.66, -10 0') -->
+
+<body>
+  <svg viewBox="0 0 100 50" version="1.1" id='svg-signature'>
+     <!-- <path d='M startX startY a xrad yrad xrot largeflag sweepflag endx endy'/> -->
+    <circle cx="25" cy="30" r="5" 
+      fill="none" stroke='lightblue' stroke-width='1px'/>
+    <circle id='circle2' cx="45" cy="30" r="5" 
+      fill="none" stroke='lightblue' stroke-width='1px'/>     
+    <g id='robcmills'
+      stroke='black' stroke-width='1' fill='none'
+      stroke-dasharray='100px, 100px' stroke-dashoffset='0px'>
+      <path id='ro' d='M 10,35 L 10,30 
+        c 0-6.66, 10-6.66, 10 0 
+        c 0 6.66, 10 6.66, 10 0
+        c 0-6.66, -10-6.66, -10 0'/>
+      <path id='b' d='M 30 15 L 30 30
+        c 0 6.66, 10 6.66, 10 0
+        c 0-6.66, -10-6.66, -10 0'/>
+<!--       <path id='cmi' d='M 48.5 26 
+        C 47 27, 40 30, 40 30'/> -->
+      <path id='construct' d='M 40 30 l 5 0 l 10 -10'/>
+      <path id='construct2' stroke='lightgreen' d='M 40 30 
+        c 0 6.66, 10 6.66, 10 0
+        c 0-6.66, -10-6.66, -10 0'/>
+      <path id='bez2' stroke='red' d='M 48.657 26.34 
+        c -0.936 -0.936, -2.15 -1.464, -3.536 -1.464'/>       
+    </g>
+  </svg>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/snap.svg.js"></script>
+  <script src="js/js.js"></script>
+</body>
+</html>
