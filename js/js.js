@@ -10,9 +10,9 @@ $(document).ready(function(){
 
   animate();
 
-  setInterval(function() {
-    animate();
-  }, 5000);
+  // setInterval(function() {
+  //   animate();
+  // }, 5000);
 
   $(document).click(function(){
     animate();
