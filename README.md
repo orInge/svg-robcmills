@@ -1,4 +1,5 @@
 svg-robcmills
 =============
 
-my personal logo for my website title created and animated with Snap.svg
+personal web logo title in pure svg, animated with Snap.svg
+layout design is based on flexbox holy grail

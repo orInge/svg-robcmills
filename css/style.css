@@ -3,65 +3,45 @@ html, body {
   background-color: Lightgray;
   min-height: 100vh; }
 
-body, .container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
+body, .container, .header {
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -moz-box-orient: vertical;
-  -moz-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column; }
 
 .header {
   background-color: black;
   color: white;
-  height: 4em; }
+  display: flex;
+  flex-direction: column;
+  flex: .5; }
+  .header .title-container {
+    flex: 2; }
+  .header p {
+    flex: 1;
+    margin: 0; }
 
 .container {
-  flex: 1; }
-  .container .nav {
-    order: -1; }
-    .container .nav ol {
-      margin: 0;
-      padding: 0; }
-      .container .nav ol li {
-        height: 4em; }
+  flex: 3; }
+  .container .nav ol {
+    margin: 0;
+    padding: 0; }
+    .container .nav ol li {
+      height: 4em; }
   .container .content {
     background-color: white;
     flex: 1; }
 
 .footer {
-  background-color: gray; }
+  background-color: gray;
+  flex: .5; }
 
 /*@media (min-width: 768px) {*/
 @media (min-width: 48em) {
   .header {
-    height: 6em; }
+    /*height: 4em;*/ }
 
-  .container {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -moz-box-orient: horizontal;
-    -moz-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -moz-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    -ms-flex-preferred-size: auto; }
-    .container .content {
+  .header, .container {
+    flex-direction: row; }
+    .header .content, .container .content {
       flex: 1; }
-    .container .nav, .container .ads {
-      -webkit-box-flex: 0;
-      -webkit-flex: 0 0 12em;
-      -moz-box-flex: 0;
-      -ms-flex: 0 0 12em;
+    .header .nav, .header .ads, .container .nav, .container .ads {
       flex: 0 0 12em; } }
