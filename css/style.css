@@ -1,47 +1,4 @@
 /* sass --watch sass/style.scss:css/style.css */
 html, body {
-  background-color: Lightgray;
-  min-height: 100vh; }
-
-body, .container, .header {
-  display: flex;
-  flex-direction: column; }
-
-.header {
   background-color: black;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  flex: .5; }
-  .header .title-container {
-    flex: 2; }
-  .header p {
-    flex: 1;
-    margin: 0; }
-
-.container {
-  flex: 3; }
-  .container .nav ol {
-    margin: 0;
-    padding: 0; }
-    .container .nav ol li {
-      height: 4em; }
-  .container .content {
-    background-color: white;
-    flex: 1; }
-
-.footer {
-  background-color: gray;
-  flex: .5; }
-
-/*@media (min-width: 768px) {*/
-@media (min-width: 48em) {
-  .header {
-    /*height: 4em;*/ }
-
-  .header, .container {
-    flex-direction: row; }
-    .header .content, .container .content {
-      flex: 1; }
-    .header .nav, .header .ads, .container .nav, .container .ads {
-      flex: 0 0 12em; } }
+  min-height: 100vh; }

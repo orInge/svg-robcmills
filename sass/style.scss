@@ -1,70 +1,7 @@
 /* sass --watch sass/style.scss:css/style.css */
 
 html, body {
-  background-color: Lightgray;
+  background-color: black;
   min-height: 100vh;
 }
 
-body, .container, .header {
-  display: flex;
-  flex-direction: column;
-}
-
-.header {
-  background-color: black;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  flex: .5;
-
-  .title-container {
-    flex: 2;
-    .title-content {
-    }
-  }
-  p {
-    flex: 1;
-    margin: 0;
-  }
-}
-.container {
-  flex: 3;
-
-  .nav {
-    ol {
-      margin: 0;
-      padding: 0;
-
-      li {
-        height: 4em;
-      }
-    }
-  }
-  .content {
-    background-color: white;
-    flex: 1;
-  }
-}
-.footer {
-  background-color: gray;
-  flex: .5;
-}
-
-/*@media (min-width: 768px) {*/
-@media (min-width: 48em) {
-  .header {
-    /*height: 4em;*/
-  }
-  .header, .container {
-    flex-direction: row;
-
-    .content {
-      flex: 1;
-    }
-    .nav, .ads {
-      flex: 0 0 12em;
-    }
-  }
-  .footer {
-  }
-}
